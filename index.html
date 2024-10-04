@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Stefanus Mongkaren</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang Saya</a></li>
+                <li><a href="#kontak">Kontak Saya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="beranda" class="section beranda">
+        <main class="content">
+            <section class="intro">
+                <h1>Hallo, Saya</h1>
+                <h2>Manik Nur</h2>
+                <h3 class="hidden">DevOps</h3>
+                <h3 class="hidden">Cloud Engineer</h3>
+                <p><a href="#tentang" style="color: gray;">Info lebih lanjut</a></p>
+            </section>
+            <section class="profile-img" id="profile-img">
+                <img src="img/p.jpg" alt="Profil">
+            </section>
+        </main>
+    </section>
+
+    <section id="tentang" class="section tentang-saya">
+        <h2>Tentang Saya</h2>
+        <p>Saya mahasiswa semester 5 dengan konsentrasi jaringan komputer. dan sekarang saya mengikuti program SIB SEAL mitra AWS komputasi platform.</p>
+        <h2>Skills</h2>
+        <div class="chart-container">
+            <div class="chart-item">
+                <canvas id="OracleChart"></canvas>
+                <p>Oracle</p>
+            </div>
+            <div class="chart-item">
+                <canvas id="cssChart"></canvas>
+                <p>CSS</p>
+            </div>
+            <div class="chart-item">
+                <canvas id="jsChart"></canvas>
+                <p>JavaScript</p>
+            </div>
+            <div class="chart-item">
+                <canvas id="phpChart"></canvas>
+                <p>PHP</p>
+            </div>
+            <div class="chart-item">
+                <canvas id="pythonChart"></canvas>
+                <p>Python</p>
+            </div>
+        </div>
+        
+        <div class="chart-legend">
+            <span><span class="color-box blue"></span> Dikuasai</span>
+            <span><span class="color-box grey" style="margin-left: 10ox;"></span> Belum Dikuasai</span>
+        </div>
+    </section>
+
+    <section id="kontak" class="section kontak">
+        <h2>Kontak Saya</h2>
+        <p>Hubungi saya melalui email atau media sosial:</p>
+        <ul class="social-media">
+            <li><a href="#" target="_blank"><img src="img/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#" target="_blank"><img src="img/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a></li>
+            
+        </ul>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+

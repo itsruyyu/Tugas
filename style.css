@@ -1,0 +1,241 @@
+:root {
+    --bg: #1d204b;
+    --bghvr: #313569;
+    --hrf: #fff;
+    --sbg: #e0e0e0;
+    --sbg2: #b4b4b4;
+    --c1: #007BFF;
+    --c2: #6C757D;
+    --ijo: #28A745;
+    --mrh: #DC3545;
+    --kng: #FFC107;
+    --hvr: #17A2B8;
+    --light: #F8F9FA;
+    --dark: #343A40;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--sbg);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--sbg);
+    padding: 20px;
+    text-align: right;
+}
+
+
+
+nav ul {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    background-color: var(--bghvr);
+    border-radius: 5px;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-margin-top: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.intro {
+    text-align: left;
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.intro p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.intro a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.profile-img img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+
+    .intro h1 {
+        font-size: 3rem;
+    }
+
+    .intro h2 {
+        font-size: 3.5rem;
+    }
+
+    .profile-img img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #profile-img {
+        display: none;
+    }
+}
+
+.tentang-saya {
+    background-color: #fff;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.chart-item {
+    text-align: center;
+}
+
+canvas {
+    width: 150px !important;
+    height: 150px !important;
+    margin: 10px;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.blue {
+    background-color: var(--bghvr);
+}
+
+.grey {
+    background-color: #e9ecef;
+}
+
+
+.kontak {
+    background-color: var(--sbg);
+    color: var(--dark);
+}
+
+.kontak h2 {
+    margin-bottom: 20px;
+}
+
+.kontak p {
+    padding: 10px;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li {
+    margin: 0 15px;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);
+}
+
+
+.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.visible {
+    max-height: 100px; 
+    opacity: 1;
+    transition: max-height 0.6s ease-in, opacity 0.6s ease-in;
+}
